@@ -17,6 +17,7 @@ import android.os.Bundle;
 import android.os.Looper;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -42,6 +43,7 @@ public class MainActivity3 extends AppCompatActivity {
     private TextView AddressText;
     private Button LocationButton;
     private LocationRequest locationRequest;
+    private ProgressBar progressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,11 +52,13 @@ public class MainActivity3 extends AppCompatActivity {
 
         AddressText = findViewById(R.id.addressText);
         LocationButton = findViewById(R.id.locationButton);
+        progressBar = findViewById(R.id.progressBar6);
 
         locationRequest = LocationRequest.create();
         locationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
         locationRequest.setInterval(5000);
         locationRequest.setFastestInterval(2000);
+
 
         LocationButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -103,10 +107,10 @@ public class MainActivity3 extends AppCompatActivity {
                 }else {
 
                     turnOnGPS();
+
                 }
             }
         }
-
 
     }
 
@@ -146,6 +150,7 @@ public class MainActivity3 extends AppCompatActivity {
                                         double longitude = locationResult.getLocations().get(index).getLongitude();
 
                                         AddressText.setText("Latitude: "+ latitude + "\n" + "Longitude: "+ longitude);
+
                                     }
                                 }
                             }, Looper.getMainLooper());

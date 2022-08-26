@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
-    android:backgroundTint="#FFFFFF"
+    android:background="@drawable/forget"
     tools:context=".MainActivity4">
 
     <TextView
@@ -16,8 +15,8 @@
         android:text="Reset your Password"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="#448AFF"
-        android:textSize="28sp"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -27,22 +26,24 @@
 
     <EditText
         android:id="@+id/email5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="325dp"
+        android:layout_height="49dp"
         android:background="#83FFFF00"
-        android:backgroundTint="#83FFFF00"
+        android:backgroundTint="#00FFFF00"
         android:ems="10"
         android:hint="Enter Your Email"
         android:inputType="textEmailAddress"
         android:minHeight="48dp"
-        android:textColor="#000000"
-        android:textColorHint="#88000000"
+        android:textColor="#40C4FF"
+        android:textColorHint="#40C4FF"
+        android:textSize="22sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/title5"
-        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="@+id/title5"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.309" />
+        app:layout_constraintVertical_bias="0.366" />
 
     <Button
         android:id="@+id/reset"
@@ -50,10 +51,14 @@
         android:layout_height="wrap_content"
         android:background="#BE536DFE"
         android:text="Reset Your Password"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="#40C4FF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/email5"
         app:layout_constraintStart_toStartOf="@+id/email5"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.543" />
 
     <ProgressBar
         android:id="@+id/progressBar3"

@@ -27,8 +27,8 @@
 
     <EditText
         android:id="@+id/email"
-        android:layout_width="303dp"
-        android:layout_height="72dp"
+        android:layout_width="352dp"
+        android:layout_height="76dp"
         android:background="#00000000"
         android:backgroundTint="#9C000000"
         android:drawableLeft="@drawable/person"

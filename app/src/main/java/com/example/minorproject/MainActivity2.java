@@ -125,6 +125,7 @@ public class MainActivity2 extends AppCompatActivity implements View.OnClickList
                                     if(task.isSuccessful()){
                                         Toast.makeText(MainActivity2.this , "User has been registered successfully!", Toast.LENGTH_LONG).show();
                                         progressBar2.setVisibility(View.GONE);
+                                        startActivity(new Intent(MainActivity2.this,MainActivity.class));
                                     }
                                     else{
                                         Toast.makeText(MainActivity2.this , "Failed to register! Try Again!", Toast.LENGTH_LONG).show();

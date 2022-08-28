@@ -38,6 +38,8 @@
         android:textColorHint="#40C4FF"
         android:textSize="22sp"
         android:textStyle="bold"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:drawableTint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/title5"
         app:layout_constraintHorizontal_bias="0.517"

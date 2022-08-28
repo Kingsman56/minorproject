@@ -46,13 +46,13 @@ public class MainActivity4 extends AppCompatActivity {
         String email6 = email5.getText().toString().trim();
 
         if(email6.isEmpty()){
-            email5.setError("Email is valid!!");
+            email5.setError("Email is required!!");
             email5.requestFocus();
             return;
         }
 
         if(!Patterns.EMAIL_ADDRESS.matcher(email6).matches()){
-            email5.setError("Please provide a valid email address");
+            email5.setError("Please provide a valid email address!!");
             email5.requestFocus();
             return;
         }

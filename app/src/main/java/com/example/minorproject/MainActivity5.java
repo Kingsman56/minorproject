@@ -10,5 +10,8 @@ public class MainActivity5 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main5);
+
+
+        getSupportFragmentManager().beginTransaction().replace(R.id.wrapper,new recfragment()).commit();
     }
 }

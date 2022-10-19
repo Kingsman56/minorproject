@@ -1,10 +1,5 @@
 package com.example.minorproject;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-
 import android.Manifest;
 import android.app.Activity;
 import android.content.Context;
@@ -20,6 +15,11 @@ import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 
 import com.google.android.gms.common.api.ApiException;
 import com.google.android.gms.common.api.ResolvableApiException;
@@ -44,6 +44,7 @@ public class MainActivity3 extends AppCompatActivity {
     private Button LocationButton;
     private LocationRequest locationRequest;
     private ProgressBar progressBar;
+    private Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,6 +66,15 @@ public class MainActivity3 extends AppCompatActivity {
             public void onClick(View v) {
 
                 getCurrentLocation();
+            }
+        });
+
+        button = (Button) findViewById(R.id.button);
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                           startActivity(new Intent(MainActivity3.this , MainActivity5.class));
             }
         });
 
